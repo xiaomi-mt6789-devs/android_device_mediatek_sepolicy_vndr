@@ -76,6 +76,7 @@
 # rpmb char device
 /dev/rpmb0       u:object_r:teei_rpmb_device:s0
 /dev/mmcblk0rpmb u:object_r:rpmb_device:s0
+/dev/0:0:0:49476 u:object_r:teei_rpmb_device:s0
 
 # legacy char device for cross-platform compatibility
 /dev/emmcrpmb0    u:object_r:teei_rpmb_device:s0

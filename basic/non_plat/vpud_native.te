@@ -29,6 +29,10 @@ allow vpud_native gz_device:chr_file rw_file_perms;
 allow vpud_native proc_m4u:file rw_file_perms;
 allow vpud_native tee_device:chr_file rw_file_perms;
 
+# Allow access to dmabuf heaps
+allow vpud_native dmabuf_system_heap_device:chr_file r_file_perms;
+allow vpud_native dmabuf_system_secure_heap_device:chr_file r_file_perms;
+
 # call PowerHal
 hal_client_domain(vpud_native, hal_power)
 
